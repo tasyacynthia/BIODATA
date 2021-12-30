@@ -1,9 +1,10 @@
-Nama : Julio Adi putra
-NPM : 19150610008
+Nama : tasya cynthia
+NPM : 19550611004
+kelas:TI-A
 MK: Web Pogramming
 <script> // awal script
 $(document).ready(function() {       //dijalankan pada saat semua elemen siap
-$("#target1").css("color", "red"); //mengubah css color menjadi warna red
+$("#target1").css("color", "purple"); //mengubah css color menjadi warna purple
 $("#target1").prop("disabled", true);   //menonaktifkan tombol target 1
 $("#target4").remove(); //menghapus elemen target4
 $("#target2").appendTo("#right-well");  //memindahkan elemen target2 ke #right-well

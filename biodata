@@ -1,0 +1,43 @@
+Nama : Julio Adi putra
+NPM : 19150610008
+MK: Web Pogramming
+<script> // awal script
+$(document).ready(function() {       //dijalankan pada saat semua elemen siap
+$("#target1").css("color", "red"); //mengubah css color menjadi warna red
+$("#target1").prop("disabled", true);   //menonaktifkan tombol target 1
+$("#target4").remove(); //menghapus elemen target4
+$("#target2").appendTo("#right-well");  //memindahkan elemen target2 ke #right-well
+$("#target5").clone().appendTo("#left-well"); //menyalin elemen target5 ke #left-well
+$("#target1").parent().css("background-color", "red"); //memberi warna latar merah parent dari target1
+$("#right-well").children().css("color", "orange");  //memberi warna oren ke children right-well
+$("#left-well").children().css("color", "green"); //memberi warna hijau untuk children left-well
+$(".target:nth-child(2)").addClass("animated bounce"); //membuat children ke2 untuk setiapnya dengan class animate bounce
+$(".target:even").addClass("animated shake"); // menargetkan semua elemen genap untuk memberi kelas animated shake
+}); //akhir fungsi line ke2
+</script> //akhir script
+<div class="container-fluid"> //membuat container lebar penuh
+<h3 class="text-primary text-center">jQuery Playground</h3> //setting text dan menyesuaikan jquery
+<div class="row"> //membuat baris
+<div class="col-xs-6"> //mengatur grid ukuran 6(handphone)
+<h4>#left-well</h4> //mengatur ke left-well
+<div class="well" id="left-well"> //membuat class well dengan id left-well
+<button class="btn btn-default target" id="target1">#target1</button> //menambahkan button dengan class btn-default boostrap dan memberikan id target1 dengan jquery target1
+<button class="btn btn-default target" id="target2">#target2</button>//menambahkan button dengan class btn-default boostrap dan memberikan id target2 dengan jquery target2
+ 
+<button class="btn btn-default target" id="target3">#target3</button>//menambahkan button dengan class btn-default boostrap dan memberikan id target3 dengan jquery target3
+ 
+</div> //akhir div
+</div>//awal div
+<div class="col-xs-6"> //mengatur grid ukuran 6
+<h4>#right-well</h4> //mengatur ke right-well
+<div class="well" id="right-well"> //membuat kelas well dengan id right-well
+<button class="btn btn-default target" id="target4">#target4</button> >//menambahkan button dengan class btn-default boostrap dan memberikan id target4 dengan jquery target4
+ 
+<button class="btn btn-default target" id="target5">#target5</button> >//menambahkan button dengan class btn-default boostrap dan memberikan id target5 dengan jquery target5
+ 
+<button class="btn btn-default target" id="target6">#target6</button> >//menambahkan button dengan class btn-default boostrap dan memberikan id target6 dengan jquery target6
+ 
+</div> //akhir div
+</div>//akhir div
+</div>//akhir div
+</div>//akhir div
